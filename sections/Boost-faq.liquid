@@ -1,0 +1,138 @@
+<style>
+  / FAQ section /
+.faq-section {
+  margin-bottom: 20px;
+}
+ {% if section.settings.faq_type == 'type_one' %}
+   .accordion{
+     background:red;
+     padding:30px;
+   }
+  
+   {% elsif section.settings.faq_type == 'type_two' %}
+   .different-style-faq {
+    background: pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 30px;
+}
+    {% endif %}
+/ FAQ item /
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/ FAQ question /
+.faq-question {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/ FAQ answer /
+.faq-answer {
+  padding: 10px;
+  display: none;
+}
+
+/ Accordion styles /
+.accordion {
+  margin-bottom: 20px;
+}
+
+/ Active state for accordion item /
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+</style>
+
+<div class="faq-section page-width">
+   <h1 class="section-heading">
+    FAQ's
+  </h1>
+  {% if section.settings.faq_type == 'type_one' %}
+    <div class="accordion">
+      {% for faq_item in section.blocks %}
+        <div class="faq-item">
+          <div class="faq-question">{{ faq_item.settings.question }}</div>
+          <div class="faq-answer">{{ faq_item.settings.answer }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  {% elsif section.settings.faq_type == 'type_two' %}
+    <div class="different-style-faq">
+      {% for faq_item in section.blocks %}
+        <div class="faq-item">
+          <div class="faq-question">{{ faq_item.settings.question }}</div>
+          <div class="faq-answer">{{ faq_item.settings.answer }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const accordionItems = document.querySelectorAll('.faq-item');
+
+  accordionItems.forEach(item => {
+    item.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const answer = this.querySelector('.faq-answer');
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    });
+  });
+});
+</script>
+
+
+{% schema %}
+{
+  "name": "DEE FAQ",
+  "settings": [
+    {
+      "type": "select",
+      "id": "faq_type",
+      "label": "FAQ Type",
+      "options": [
+        { "value": "type_one", "label": "Type One" },
+        { "value": "type_two", "label": "Type Two" }
+      ],
+      "default": "type_one"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}

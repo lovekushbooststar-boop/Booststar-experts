@@ -1,0 +1,446 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_collection_icon_RyUiQr": {
+      "type": "custom-collection_icon",
+      "blocks": {
+        "story_GNarzc": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/blank-1886008_1280.png",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_bT6KYX": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_3CKbjz": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_FLJc7d": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_JBVzXN": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_FqXhUY": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_U76mNX": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_qG9zte": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_Fcyw4f": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_nKHwCQ": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_kWzzyE": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_rM99jM": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_DJxgRx": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_Q3zkKe": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_4gmGnz": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_KAHpLF": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        },
+        "story_B4kWWt": {
+          "type": "story",
+          "settings": {
+            "collection_link": "",
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_2.jpg",
+            "collection_title": "new arrivals"
+          }
+        }
+      },
+      "block_order": [
+        "story_GNarzc",
+        "story_bT6KYX",
+        "story_3CKbjz",
+        "story_FLJc7d",
+        "story_JBVzXN",
+        "story_FqXhUY",
+        "story_U76mNX",
+        "story_qG9zte",
+        "story_Fcyw4f",
+        "story_nKHwCQ",
+        "story_kWzzyE",
+        "story_rM99jM",
+        "story_DJxgRx",
+        "story_Q3zkKe",
+        "story_4gmGnz",
+        "story_KAHpLF",
+        "story_B4kWWt"
+      ],
+      "settings": {
+        "icon-style": "right_Chevron",
+        "bg_color": "#1773b0"
+      }
+    },
+    "custom_collection_slider_W486gN": {
+      "type": "custom_collection_slider",
+      "blocks": {
+        "story_zAAYXd": {
+          "type": "story",
+          "settings": {
+            "collection_img": "shopify://shop_images/From_Vedas_900x_1ac5a43f-86b6-48a9-9365-0a2923a02292.webp",
+            "collection_title": "",
+            "collection_link": "shopify://collections/frontpage",
+            "badge-text": "Badge"
+          }
+        },
+        "story_tkJ4zJ": {
+          "type": "story",
+          "settings": {
+            "collection_title": "",
+            "collection_link": "",
+            "badge-text": "Badge"
+          }
+        },
+        "story_7TUJhD": {
+          "type": "story",
+          "settings": {
+            "collection_img": "shopify://shop_images/Food_Under_500-02_720x_9ea20855-2284-4673-a0db-c9ee21c271c7.webp",
+            "collection_title": "fff",
+            "collection_link": "shopify://pages/contact",
+            "badge-text": "Badge"
+          }
+        },
+        "story_dCrRX4": {
+          "type": "story",
+          "settings": {
+            "collection_img": "shopify://shop_images/Asset_27-8.png",
+            "collection_title": "",
+            "collection_link": "shopify://products/bota-tejida-para-hombre",
+            "badge-text": "Badge"
+          }
+        },
+        "story_eHrJWK": {
+          "type": "story",
+          "settings": {
+            "collection_img": "shopify://shop_images/local_up.jpg",
+            "collection_title": "",
+            "collection_link": "shopify://collections/all",
+            "badge-text": "Badge"
+          }
+        },
+        "story_zXXkxm": {
+          "type": "story",
+          "settings": {
+            "collection_img": "shopify://shop_images/MJ_Mauve_Cat.jpg",
+            "collection_title": "",
+            "collection_link": "shopify://metaobjects/location/flooring-in-liverpool-at-unbeatable-prices",
+            "badge-text": "Badge"
+          }
+        },
+        "story_UqKMqd": {
+          "type": "story",
+          "settings": {
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_1.jpg",
+            "collection_title": "",
+            "collection_link": "shopify://products/bota-tejida-para-hombre",
+            "badge-text": "Badge"
+          }
+        },
+        "story_jLNCXW": {
+          "type": "story",
+          "settings": {
+            "collection_img": "shopify://shop_images/Gemini_Generated_Image_3.jpg",
+            "collection_title": "",
+            "collection_link": "shopify://products/bota-tejida-para-hombre",
+            "badge-text": "Badge"
+          }
+        }
+      },
+      "block_order": [
+        "story_zAAYXd",
+        "story_tkJ4zJ",
+        "story_7TUJhD",
+        "story_dCrRX4",
+        "story_eHrJWK",
+        "story_zXXkxm",
+        "story_UqKMqd",
+        "story_jLNCXW"
+      ],
+      "settings": {
+        "icon-style": "bevel"
+      }
+    },
+    "slideshow_JqTeqE": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_qCeqfm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/local_up.jpg",
+            "image-mob": "shopify://shop_images/local_up.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_aeXLWG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/local_up.jpg",
+            "image-mob": "shopify://shop_images/local_up.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qCeqfm",
+        "slide_aeXLWG"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "boost_faq_4rqTKJ": {
+      "type": "Boost-faq",
+      "blocks": {
+        "faq_item_zUcgk7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 1",
+            "answer": "<p>Suggest three unique options in JSON format. Provide detailed descriptions for each option to ensure clarity for customers.</p>"
+          }
+        },
+        "faq_item_AcRG9E": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 1",
+            "answer": "<p>Suggest three unique options in JSON format. Provide detailed descriptions for each option to ensure clarity for customers.</p>"
+          }
+        },
+        "faq_item_FHU7AY": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 1",
+            "answer": "<p>Suggest three unique options in JSON format. Provide detailed descriptions for each option to ensure clarity for customers.</p>"
+          }
+        },
+        "faq_item_YmTeGK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 1",
+            "answer": "<p>Suggest three unique options in JSON format. Provide detailed descriptions for each option to ensure clarity for customers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_zUcgk7",
+        "faq_item_AcRG9E",
+        "faq_item_FHU7AY",
+        "faq_item_YmTeGK"
+      ],
+      "settings": {
+        "faq_type": "type_two"
+      }
+    },
+    "bottom_navigation_8bppNq": {
+      "type": "bottom_navigation",
+      "blocks": {
+        "item_J3Uh9a": {
+          "type": "item",
+          "settings": {
+            "svg_icon": "shopify://shop_images/account-avatar-person-svgrepo-com.png",
+            "title": "Your title",
+            "link": "shopify://blogs/news"
+          }
+        },
+        "item_cQUJ6B": {
+          "type": "item",
+          "settings": {
+            "svg_icon": "shopify://shop_images/cart-plus-svgrepo-com.png",
+            "title": "Your title",
+            "link": "shopify://blogs/news"
+          }
+        },
+        "item_wp66Fq": {
+          "type": "item",
+          "settings": {
+            "svg_icon": "shopify://shop_images/shop-store-ecommerce-svgrepo-com_2.png",
+            "title": "Your title",
+            "link": "shopify://products/bota-tejida-para-hombre"
+          }
+        },
+        "item_RhUEJb": {
+          "type": "item",
+          "settings": {
+            "svg_icon": "shopify://shop_images/shop-store-ecommerce-svgrepo-com_2.png",
+            "title": "Your title",
+            "link": "shopify://products/bota-tejida-para-hombre"
+          }
+        },
+        "item_HjyQWW": {
+          "type": "item",
+          "settings": {
+            "svg_icon": "shopify://shop_images/shop-store-ecommerce-svgrepo-com_2.png",
+            "title": "Your title",
+            "link": "shopify://products/bota-tejida-para-hombre"
+          }
+        }
+      },
+      "block_order": [
+        "item_J3Uh9a",
+        "item_cQUJ6B",
+        "item_wp66Fq",
+        "item_RhUEJb",
+        "item_HjyQWW"
+      ],
+      "settings": {
+        "icon-style": "style3",
+        "icon_color": "",
+        "announcement-style": "simple",
+        "background_color": "#ffffff",
+        "indigrient_background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) 100%)",
+        "background-style": "bg10",
+        "show_bottom_menu": false,
+        "show_your_font_color": false,
+        "color_title": "#ffffff",
+        "icon_size": 17
+      }
+    },
+    "custom_time_counter_FiJJ9t": {
+      "type": "custom_time_counter",
+      "settings": {
+        "start_year": "2024",
+        "start_month": "5",
+        "start_day": "10",
+        "start_time": "03:00"
+      }
+    }
+  },
+  "order": [
+    "custom_collection_icon_RyUiQr",
+    "custom_collection_slider_W486gN",
+    "slideshow_JqTeqE",
+    "boost_faq_4rqTKJ",
+    "bottom_navigation_8bppNq",
+    "custom_time_counter_FiJJ9t"
+  ]
+}

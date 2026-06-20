@@ -1,0 +1,378 @@
+
+<script src="{{ 'splide.js' | asset_url }}" ></script>
+<style>
+  .bs-gallery {
+    display:flex;
+  }
+.story-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* To ensure the image covers the entire area */
+  }  
+  span.badge-text {
+    position: absolute;
+    background: red;
+    color: white;
+    padding: 0px 10px;
+    font-size: 8px;
+    left: 61px;
+    top: 5px;
+    border-radius: 12px;
+}
+ .story-img {
+    position: relative;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+
+/* clip-path: polygon(50% 0%, 100% 38.56%, 82.5% 100%, 17.5% 100%, 0% 38.56%); */
+
+  }
+
+{% if section.settings['icon-style']=='style1' %}
+  
+.{{section.settings.icon-style}} {
+  clip-path: circle(50% at 50% 50%);
+  }
+  
+{% elsif section.settings['icon-style']=='parallelogram' %}
+
+.{{section.settings.icon-style}} {
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+{% elsif section.settings['icon-style']=='triangle' %}
+  
+.{{section.settings.icon-style}} {
+ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+{% elsif section.settings['icon-style']=='rhombus' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+{% elsif section.settings['icon-style']=='pentagon' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+{% elsif section.settings['icon-style']=='hexagon' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+{% elsif section.settings['icon-style']=='heptagon' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+{% elsif section.settings['icon-style']=='octagon' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+{% elsif section.settings['icon-style']=='nonagon' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+{% elsif section.settings['icon-style']=='decagon' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+{% elsif section.settings['icon-style']=='bevel' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+{% elsif section.settings['icon-style']=='rabbet' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+  
+{% elsif section.settings['icon-style']=='left_arrow' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+  
+{% elsif section.settings['icon-style']=='right_arrow' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+{% elsif section.settings['icon-style']=='left_Point' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+{% elsif section.settings['icon-style']=='right_Point' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+{% elsif section.settings['icon-style']=='left_Chevron' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+  
+{% elsif section.settings['icon-style']=='right_Chevron' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+  
+{% elsif section.settings['icon-style']=='star' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+} 
+  
+{% elsif section.settings['icon-style']=='cross' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+}  
+  
+{% elsif section.settings['icon-style']=='message' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+} 
+  
+{% elsif section.settings['icon-style']=='close' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}   
+{% elsif section.settings['icon-style']=='frame' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+} 
+
+
+{% elsif section.settings['icon-style']=='circle' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: circle(50% at 50% 50%);
+} 
+    
+{% elsif section.settings['icon-style']=='ellipse' %}
+  
+.{{section.settings.icon-style}} {
+clip-path: ellipse(25% 40% at 50% 50%);
+} 
+  
+  {% endif %}
+
+  
+  .splide__container{box-sizing:border-box;position:relative}.splide__list{backface-visibility:hidden;display:-ms-flexbox;display:flex;height:100%;margin:0!important;padding:0!important}.splide.is-initialized:not(.is-active) .splide__list{display:block}.splide__pagination{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:center;justify-content:center;margin:0;pointer-events:none}.splide__pagination li{display:inline-block;line-height:1;list-style-type:none;margin:0;pointer-events:auto}.splide:not(.is-overflow) .splide__pagination{display:none}.splide__progress__bar{width:0}.splide{position:relative;visibility:hidden}.splide.is-initialized,.splide.is-rendered{visibility:visible}.splide__slide{backface-visibility:hidden;box-sizing:border-box;-ms-flex-negative:0;flex-shrink:0;list-style-type:none!important;margin:0;position:relative}.splide__slide img{vertical-align:bottom}.splide__spinner{animation:splide-loading 1s linear infinite;border:2px solid #999;border-left-color:transparent;border-radius:50%;bottom:0;contain:strict;display:inline-block;height:20px;left:0;margin:auto;position:absolute;right:0;top:0;width:20px}.splide__sr{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.splide__toggle.is-active .splide__toggle__play,.splide__toggle__pause{display:none}.splide__toggle.is-active .splide__toggle__pause{display:inline}.splide__track{overflow:hidden;position:relative;z-index:0}@keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}}.splide__track--draggable{-webkit-touch-callout:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.splide__track--fade>.splide__list>.splide__slide{margin:0!important;opacity:0;z-index:0}.splide__track--fade>.splide__list>.splide__slide.is-active{opacity:1;z-index:1}.splide--rtl{direction:rtl}.splide__track--ttb>.splide__list{display:block}.splide__arrow{-ms-flex-align:center;align-items:center;background:#ccc;border:0;border-radius:50%;cursor:pointer;display:-ms-flexbox;display:flex;height:2em;-ms-flex-pack:center;justify-content:center;opacity:.7;padding:0;position:absolute;top:50%;transform:translateY(-50%);width:2em;z-index:1}.splide__arrow svg{fill:#000;height:1.2em;width:1.2em}.splide__arrow:hover:not(:disabled){opacity:.9}.splide__arrow:disabled{opacity:.3}.splide__arrow:focus-visible{outline:3px solid #0bf;outline-offset:3px}.splide__arrow--prev{left:1em}.splide__arrow--prev svg{transform:scaleX(-1)}.splide__arrow--next{right:1em}.splide.is-focus-in .splide__arrow:focus{outline:3px solid #0bf;outline-offset:3px}.splide__pagination{bottom:.5em;left:0;padding:0 1em;position:absolute;right:0;z-index:1}.splide__pagination__page{background:#ccc;border:0;border-radius:50%;display:inline-block;height:8px;margin:3px;opacity:.7;padding:0;position:relative;transition:transform .2s linear;width:8px}.splide__pagination__page.is-active{background:#fff;transform:scale(1.4);z-index:1}.splide__pagination__page:hover{cursor:pointer;opacity:.9}.splide__pagination__page:focus-visible{outline:3px solid #0bf;outline-offset:3px}.splide.is-focus-in .splide__pagination__page:focus{outline:3px solid #0bf;outline-offset:3px}.splide__progress__bar{background:#ccc;height:3px}.splide__slide{-webkit-tap-highlight-color:rgba(0,0,0,0)}.splide__slide:focus{outline:0}@supports(outline-offset:-3px){.splide__slide:focus-visible{outline:3px solid #0bf;outline-offset:-3px}}@media screen and (-ms-high-contrast:none){.splide__slide:focus-visible{border:3px solid #0bf}}@supports(outline-offset:-3px){.splide.is-focus-in .splide__slide:focus{outline:3px solid #0bf;outline-offset:-3px}}@media screen and (-ms-high-contrast:none){.splide.is-focus-in .splide__slide:focus{border:3px solid #0bf}.splide.is-focus-in .splide__track>.splide__list>.splide__slide:focus{border-color:#0bf}}.splide__toggle{cursor:pointer}.splide__toggle:focus-visible{outline:3px solid #0bf;outline-offset:3px}.splide.is-focus-in .splide__toggle:focus{outline:3px solid #0bf;outline-offset:3px}.splide__track--nav>.splide__list>.splide__slide{border:3px solid transparent;cursor:pointer}.splide__track--nav>.splide__list>.splide__slide.is-active{border:3px solid #000}.splide__arrows--rtl .splide__arrow--prev{left:auto;right:1em}.splide__arrows--rtl .splide__arrow--prev svg{transform:scaleX(1)}.splide__arrows--rtl .splide__arrow--next{left:1em;right:auto}.splide__arrows--rtl .splide__arrow--next svg{transform:scaleX(-1)}.splide__arrows--ttb .splide__arrow{left:50%;transform:translate(-50%)}.splide__arrows--ttb .splide__arrow--prev{top:1em}.splide__arrows--ttb .splide__arrow--prev svg{transform:rotate(-90deg)}.splide__arrows--ttb .splide__arrow--next{bottom:1em;top:auto}.splide__arrows--ttb .splide__arrow--next svg{transform:rotate(90deg)}.splide__pagination--ttb{bottom:0;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;left:auto;padding:1em 0;right:.5em;top:0}
+</style>
+
+
+<div class="mobile-only-section">
+  <div class="bs-gallery splide ">
+      <div class="splide__track">
+		<div class="splide__list">
+
+    {% for block in section.blocks %}
+
+      <div class="splide__slide">
+        <a href="{{ block.settings.collection_link }}" class="story-link">
+          <img src="{{ block.settings.collection_img | img_url: 'master'}}" alt="Coffee Flag" loading="lazy" class="story-img {{ section.settings.icon-style }}">
+          <span class="badge-text">{{ block.settings.badge-text }}</span>
+          <p class="story-collection-title">{{ block.settings.collection_title }}</p>
+        </a>
+      </div>
+    {% endfor %}
+        </div>
+      </div>
+  </div>
+
+</div>
+<script type="text/javascript">
+var splide = new Splide( '.bs-gallery', {
+type   : 'loop',
+perPage: 3,
+focus  : 'center',
+autoplay: true,
+height   : '10rem',
+  });
+
+  splide.mount();
+</script>
+
+{% schema %}
+  {
+
+    "name": "Story Collection Gallery",
+	"settings": [
+
+ {
+      "type": "select",
+      "id": "icon-style",
+      "label": "Select Icon Style",
+      "options": [
+        {
+          "value": "style1",
+          "label": "Circle Shape"
+        },
+        {
+          "value": "parallelogram",
+          "label": "Parallelogram"
+        },
+        {
+          "value": "triangle",
+          "label": "Triangle"
+        },
+         {
+          "value": "rhombus",
+          "label": "Rhombus"
+        },
+         {
+          "value": "pentagon",
+          "label": "Pentagon"
+        },
+         {
+          "value": "hexagon",
+          "label": "Hexagon "
+        },
+         {
+          "value": "heptagon",
+          "label": "Heptagon"
+        },
+         {
+          "value": "octagon",
+          "label": "Octagon"
+        },
+         {
+          "value": "nonagon",
+          "label": "Nonagon"
+        },
+         {
+          "value": "decagon",
+          "label": "Decagon"
+        },
+        {
+          "value": "bevel",
+          "label": "Bevel"
+        }
+        ,
+        {
+          "value": "rabbet",
+          "label": "Rabbet"
+        },
+        {
+          "value": "left_arrow",
+          "label": "Left arrow"
+        },
+        {
+          "value": "right_arrow",
+          "label": "Right arrow"
+        },
+        {
+          "value": "left_Point",
+          "label": "Left Point"
+        },
+        {
+          "value": "right_Point",
+          "label": "Right Point"
+        },
+        {
+          "value": "left_Chevron",
+          "label": "Left Chevron"
+        },
+        {
+          "value": "right_Chevron",
+          "label": "Right Chevron"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "cross",
+          "label": "Cross"
+        },
+        {
+          "value": "message",
+          "label": "Message"
+        },
+        {
+          "value": "close",
+          "label": "Close"
+        },
+        {
+          "value": "frame",
+          "label": "Frame"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        },
+        {
+          "value": "ellipse",
+          "label": "Ellipse"
+        }
+        
+      ],
+      "default": "style1"
+    }
+
+      
+    ],
+
+
+    "blocks": [
+      {
+        "type": "story",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "collection_img",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "collection_title",
+            "label": "Title"
+          },
+          {
+            "type": "url",
+            "id": "collection_link",
+            "label": "Link"
+          },
+          {
+            "type" : "text",
+            "id" : "badge-text",
+            "label" : "Badge Text",
+            "default" : "Badge"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Story Collection Gallery"
+      }
+    ]
+  }
+{% endschema %}
