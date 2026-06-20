@@ -188,13 +188,17 @@ h3.accordion__title.h4 {
 
 /*==================== Announcement Bar Custom Style ====================*/
 .utility-bar {
-  background-color: #d11a2a !important; /* Premium rich crimson red */
-  background: #d11a2a !important;
+  background-color: #FFE500 !important; /* Premium vibrant yellow */
+  background: #FFE500 !important;
+}
+
+.utility-bar .page-width {
+  max-width: 100% !important; /* Full width container */
 }
 
 .utility-bar--bottom-border,
 .utility-bar--bottom-border-social-only {
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.15) !important;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08) !important;
 }
 
 .utility-bar .announcement-bar,
@@ -205,21 +209,21 @@ h3.accordion__title.h4 {
 .utility-bar .localization-selector,
 .utility-bar .list-social__link,
 .utility-bar .slider-button {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .utility-bar svg,
 .utility-bar svg path {
-  color: #ffffff !important;
-  fill: #ffffff !important;
+  color: #000000 !important;
+  fill: #000000 !important;
 }
 
 .utility-bar .slider-button {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .utility-bar .slider-button:not([disabled]):hover {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .utility-bar .disclosure__list-wrapper {
